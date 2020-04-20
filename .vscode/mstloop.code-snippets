@@ -1,0 +1,14 @@
+{
+  "S&T Loops Header": {
+    "prefix": "mstloop",
+    "body": [
+      "////////////////////////////////////////////////////////////////////////////////",
+      "/// ${1:loop description}.",
+      "/// loop precondition: ${2:loop's precondition}.",
+      "/// loop postcondition: ${3:loop's postcondition}.",
+      "/// invariant: ${4:loop's invariant}.",
+      "/// proof: ${5:outline of initialization, maintenance, and termination}.",
+      "////////////////////////////////////////////////////////////////////////////////"
+    ]
+  }
+}

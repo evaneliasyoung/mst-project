@@ -1,0 +1,15 @@
+{
+  "S&T Function Header": {
+    "prefix": "mstfunc",
+    "body": [
+      "////////////////////////////////////////////////////////////////////////////////",
+      "/// @fn     ${1:functionName}",
+      "/// @brief  ${2:A brief description}.",
+      "/// @pre    ${3:The function's precondition in terms of the program variables}.",
+      "/// @post   ${4:The function's postcondition in terms of program variables}.",
+      "/// @param  ${5:paramName1} ${6:description of the parameter}.",
+      "/// @return ${7:Description of the return}.",
+      "////////////////////////////////////////////////////////////////////////////////"
+    ]
+  }
+}

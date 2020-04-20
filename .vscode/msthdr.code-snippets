@@ -1,0 +1,21 @@
+{
+  "S&T Main Function": {
+    "prefix": "msthdr",
+    "body": [
+      "////////////////////////////////////////////////////////////////////////////////",
+      "/// @file   $TM_FILENAME",
+      "/// @author Evan Elias Young (eeymrr)",
+      "/// @brief  ${1:A brief description}.",
+      "////////////////////////////////////////////////////////////////////////////////",
+      "",
+      "#ifndef ${2:PROJECT_FILE}_H_",
+      "#define ${2:PROJECT_FILE}_H_",
+      "",
+      "using namespace std;",
+      "",
+      "$0",
+      "",
+      "#endif // ${2:PROJECT_FILE}_H_"
+    ]
+  }
+}

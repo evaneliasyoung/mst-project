@@ -18,4 +18,4 @@ Contains a wide variety of S&T style guide snippets.
 Contains a standard 5201 makefile, with precompiled-headers.
 
 ### clang-format
-Containts the clang-format rules for the S&T style guide.
+Contains the clang-format rules for the S&T style guide.

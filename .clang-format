@@ -4,7 +4,7 @@
 #
 # @author    Evan Elias Young
 # @date      2020-03-02
-# @date      2020-04-14
+# @date      2020-10-06
 # @copyright Copyright 2020 Evan Elias Young. All rights reserved.
 ###
 
@@ -30,7 +30,7 @@ AlwaysBreakAfterReturnType: None
 AlwaysBreakBeforeMultilineStrings: false
 AlwaysBreakTemplateDeclarations: No
 BinPackArguments: true
-InsertTrailingCommas: None
+# InsertTrailingCommas: None
 BinPackParameters: true
 BreakAfterJavaFieldAnnotations: true
 BreakBeforeBinaryOperators: NonAssignment

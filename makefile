@@ -24,6 +24,9 @@ $(PCH_OUT): $(PCH_SRC)
 $(EXEC): $(OBJECTS)
 	$(CC) $(FLAGS) $(OBJECTS) -o $@
 
+leakcheck: ${EXEC}
+	valgrind --leak-check=full ./${EXEC}
+
 run: ${EXEC}
 	./${EXEC}
 

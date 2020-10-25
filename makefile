@@ -16,7 +16,7 @@ default: $(EXEC)
 all: clean $(EXEC) run
 
 $(PCH_OUT): $(PCH_SRC)
-	$(CC) $(FALGS) -o $@ $<
+	$(CC) $(FLAGS) -o $@ $<
 
 %.o: %.cpp $(PCH_OUT)
 	$(CC) $(FLAGS) -c $< -o $@
@@ -24,11 +24,11 @@ $(PCH_OUT): $(PCH_SRC)
 $(EXEC): $(OBJECTS)
 	$(CC) $(FLAGS) $(OBJECTS) -o $@
 
-leakcheck: ${EXEC}
-	valgrind --leak-check=full ./${EXEC}
+leakcheck: $(EXEC)
+	valgrind --leak-check=full ./$(EXEC)
 
-run: ${EXEC}
-	./${EXEC}
+run: $(EXEC)
+	./$(EXEC)
 
 clean:
 	-@rm -f $(OBJECTS) >/dev/null 2>&1

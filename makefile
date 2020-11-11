@@ -18,6 +18,7 @@ debug: TARGET_FLAGS = -g -Wall -O0 -W -pedantic-errors
 release: EXEC = prog.rel.exe
 debug: EXEC = prog.dbg.exe
 leakcheck: EXEC = prog.dbg.exe
+callgrind: EXEC = prog.dbg.exe
 clean: EXEC = prog.rel.exe prog.dbg.exe
 
 default: release
@@ -37,6 +38,9 @@ debug: $(OBJECTS)
 
 leakcheck: debug
 	valgrind --leak-check=full ./$(EXEC)
+
+callgrind: debug
+	valgrind --tool=callgrind ./$(EXEC)
 
 run: release
 	./$(EXEC)
